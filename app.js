@@ -5,7 +5,7 @@ var no = '&#10060;';
 
 prot_arr[0] = {name:"Use Case simulation AR", problem:yes, added_value:yes, total_solution:yes, product_characteristics:yes, product_properties:yes, price:yes, usability:no, Revenuemechanics:no, techFeasibility:no, performance:no, hardware:yes, software:yes, human:yes, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:4, time:4, vis_fid:4, aud_fid:3, hap_fid:1, fun_ran:1, fun_lev:5, input_behaviour:"", output_behaviour:"", score:""};
 prot_arr[1] = {name:"Use Case simulation VR", problem:yes, added_value:yes, total_solution:yes, product_characteristics:yes, product_properties:yes, price:yes, usability:no, Revenuemechanics:no, techFeasibility:no, performance:no, hardware:yes, software:yes, human:yes, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:4, time:3, vis_fid:4, aud_fid:3, hap_fid:1, fun_ran:1, fun_lev:5, input_behaviour:"", output_behaviour:"", score:""};
-prot_arr[2] = {name:"Finite State Machine", problem:no, added_value:no, total_solution:no, product_characteristics:yes, product_properties:yes, price:no, usability:no, Revenuemechanics:no, techFeasibility:yes, performance:yes, hardware:yes, software:yes, human:no, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:3, time:3, vis_fid:1, aud_fid:1, hap_fid:1, fun_ran:5, fun_lev:2, input_behaviour:"", output_behaviour:"", score:""};
+prot_arr[2] = {name:"Finite State Machine", problem:no, added_value:no, total_solution:no, product_characteristics:yes, product_properties:yes, price:no, usability:no, Revenuemechanics:no, techFeasibility:yes, performance:yes, hardware:yes, software:yes, human:no, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:3, time:3, vis_fid:1, aud_fid:1, hap_fid:1, fun_ran:[1,2,3,4], fun_lev:2, input_behaviour:"", output_behaviour:"", score:""};
 prot_arr[3] = {name:"Mechanical Simulation AR", problem:no, added_value:no, total_solution:no, product_characteristics:no, product_properties:no, price:no, usability:no, Revenuemechanics:no, techFeasibility:no, performance:no, hardware:no, software:no, human:no, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:4, time:3, vis_fid:"", aud_fid:"", hap_fid:"", fun_ran:"", fun_lev:"", input_behaviour:"", output_behaviour:"", score:""};
 prot_arr[4] = {name:"Computational fluid dynamics", problem:no, added_value:no, total_solution:no, product_characteristics:no, product_properties:no, price:no, usability:no, Revenuemechanics:no, techFeasibility:yes, performance:yes, hardware:no, software:no, human:no, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:3, time:2, vis_fid:"", aud_fid:"", hap_fid:"", fun_ran:"", fun_lev:"", input_behaviour:"", output_behaviour:"", score:""};
 prot_arr[5] = {name:"Mixed mock up (half AR half physical)", problem:yes, added_value:yes, total_solution:yes, product_characteristics:yes, product_properties:yes, price:yes, usability:no, Revenuemechanics:no, techFeasibility:no, performance:no, hardware:no, software:no, human:no, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:3, time:3, vis_fid:"", aud_fid:"", hap_fid:"", fun_ran:"", fun_lev:"", input_behaviour:"", output_behaviour:"", score:""};
@@ -66,7 +66,7 @@ if (c == "submit") {
     }
 
     for (k = 0; k < non_filters.length; k++) {
-      if(document.querySelector(`input[name = ${non_filters[k]}]:checked`)){
+      if(document.querySelector(`input[name = ${non_filters[k]}]:checked`) && Array.isArray(prot_arr[i][non_filters[k]]) == false){
         if(prot_arr[i][non_filters[k]] == document.querySelector(`input[name = ${non_filters[k]}]:checked`).value){
           score = score + reward; // full reward
         }
@@ -77,9 +77,17 @@ if (c == "submit") {
           score = score + penalty; // penalty
         }
       }
-      else{
+      else if(! document.querySelector(`input[name = ${non_filters[k]}]:checked`)){
         score = score + reward;
       }
+      else{
+        for (l = 0; l < document.querySelector(`input[name = ${non_filters[k]}]`).length; l++) {
+          if(prot_arr[i][non_filters[k]][l] == document.querySelector(`input[name = ${non_filters[k]}]:checked`).value){
+            score = score + reward;
+          }
+        }
+      }
+
     }
 
     prot_arr[i].score = score;
