@@ -128,7 +128,7 @@ select option {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }

@@ -3,13 +3,7 @@ let suggested_array = [];
 var yes = '&#9989;';
 var no = '&#10060;';
 
-prot_arr[0] = {name:"Use Case simulation AR", problem:yes, added_value:yes, total_solution:yes, product_characteristics:yes, product_properties:yes, price:yes, usability:no, Revenuemechanics:no, techFeasibility:no, performance:no, hardware:yes, software:yes, human:yes, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:4, time:4, vis_fid:4, aud_fid:3, hap_fid:1, fun_ran:1, fun_lev:5, input_behaviour:"", output_behaviour:"", score:""};
-prot_arr[1] = {name:"Use Case simulation VR", problem:yes, added_value:yes, total_solution:yes, product_characteristics:yes, product_properties:yes, price:yes, usability:no, Revenuemechanics:no, techFeasibility:no, performance:no, hardware:yes, software:yes, human:yes, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:4, time:3, vis_fid:4, aud_fid:3, hap_fid:1, fun_ran:1, fun_lev:5, input_behaviour:"", output_behaviour:"", score:""};
-prot_arr[2] = {name:"Finite State Machine", problem:no, added_value:no, total_solution:no, product_characteristics:yes, product_properties:yes, price:no, usability:no, Revenuemechanics:no, techFeasibility:yes, performance:yes, hardware:yes, software:yes, human:no, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:3, time:3, vis_fid:1, aud_fid:1, hap_fid:1, fun_ran:[1,2,3,4], fun_lev:2, input_behaviour:"", output_behaviour:"", score:""};
-prot_arr[3] = {name:"Mechanical Simulation AR", problem:no, added_value:no, total_solution:no, product_characteristics:no, product_properties:no, price:no, usability:no, Revenuemechanics:no, techFeasibility:no, performance:no, hardware:no, software:no, human:no, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:4, time:3, vis_fid:"", aud_fid:"", hap_fid:"", fun_ran:"", fun_lev:"", input_behaviour:"", output_behaviour:"", score:""};
-prot_arr[4] = {name:"Computational fluid dynamics", problem:no, added_value:no, total_solution:no, product_characteristics:no, product_properties:no, price:no, usability:no, Revenuemechanics:no, techFeasibility:yes, performance:yes, hardware:no, software:no, human:no, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:3, time:2, vis_fid:"", aud_fid:"", hap_fid:"", fun_ran:"", fun_lev:"", input_behaviour:"", output_behaviour:"", score:""};
-prot_arr[5] = {name:"Mixed mock up (half AR half physical)", problem:yes, added_value:yes, total_solution:yes, product_characteristics:yes, product_properties:yes, price:yes, usability:no, Revenuemechanics:no, techFeasibility:no, performance:no, hardware:no, software:no, human:no, input_behavior:no, output_behavior:no, design:no, ux:no, service:no, pss:no, pay_in_kind:no, it:no, et:no, mb:no, marketing:no, basic_no:no, int_sol:no, own_mark_perf:no, ext_sol:no, budget:3, time:3, vis_fid:"", aud_fid:"", hap_fid:"", fun_ran:"", fun_lev:"", input_behaviour:"", output_behaviour:"", score:""};
-prot_arr[6] = {name:"Fake landing page", problem:no, added_value:yes, total_solution:yes, product_characteristics:yes, product_properties:yes, price:no, usability:no, Revenuemechanics:no, techFeasibility:no, performance:no, hardware:yes, software:yes, human:yes, input_behavior:no, output_behavior:no, design:yes, ux:yes, service:yes, pss:yes, pay_in_kind:yes, it:yes, et:no, mb:no, marketing:yes, basic_no:yes, int_sol:no, own_mark_perf:no, ext_sol:no, budget:1, time:2, vis_fid:4, aud_fid:1, hap_fid:1, fun_ran:1, fun_lev:5, input_behaviour:1, output_behaviour:1, score:""};
+prot_arr[0] = {Cluster:"Virtuelle_nicht_funktionale_Gestalt", name:"Mixed mock up (halb AR halb physisch)", Beschreibung:"<p>Beschreibung:</p> Ein mixed Mockup ist ein realistisches visuelles Design, das dem Aussehen des Endproduktes sehr nah kommt. Es enthält im Gegensatz zum Wireframe visuelle Elemente, einschließlich Grafiken, Layout, Farben und andere detailliertere visuelle Darstellungen. Bis zu einem gewissen Grad soll es optisch schon dem Endprodukt entsprechen. Bei dem mixed Mockup werden via AR Technologie notwendige Bauteile oder Werkzeuge, die noch in der Entwicklung und daher im ständigen Wandel sind, auf ein physisches Mockup, bspw aus Pappe, projeziert. Dies hat den Vorteil, dass das AR Bauteil immer wieder schnell angepasst werden kann, ohne große Kosten zu verursachen. Durch entsprechende Technik, wie AR Handschuhe, kann der Nutzer auch mit dem Bauteil interagieren.", VorgehenzurErstellung:"<p>VorgehenzurErstellung:</p> Die festen, vorhandenen Gegebenheiten werden in Form eines physischen Mockups gebaut. Hierfür kann zm Beispiel Pappe, Holz, Plastik oder andere Stoffe genutzt werden. Im Anschluss wird mithilfe von AR Technologie das noch in der Entwicklung steckende Teil auf das physische Mockup projeziert", BestPractice:"", Bilder:"images/prototypes/Mixedmockup.JPG", Tools:"images/prototypes/MixedmockupTools.JPG", Rel_Kosten:3, time:3, Problem:yes, Mehrwehrt:yes, Gesamtlösung:yes, Produktmerkmale:yes, Produkteigenschaften:yes, Preis:yes, Usability:yes, Erlösmechanik:no, technMachbarkeit:no, Leistungserbringung:no, vis_fid:5, aud_fid:4, hap_fid:[3,4,5], hardware:yes, software:yes, human:no, Funktionstiefe:4, Funktionsumfang:4, Eingabeverhalten:4, Ausgabeverhalten:3, design:yes, ux:yes, it:yes, et:yes, mb:yes, BusinessAnalysis:no, marketing:no, sachleistung:yes, pss:no, Dienstleistung:no, basic_no:yes, int_sol:no, own_mark_perf:no, ext_sol:no, PrototypeKombionations_Empfehlenswert:"", PrototypeKombionations_Möglich:"", MethodKombionations_Empfehlenswert:"", MethodKombionations_Möglich:"", Quellen:"", score:""};
 
 window.onscroll = function() {myFunction()};
 
@@ -49,8 +43,8 @@ if (c == "submit") {
   var bas_options = document.getElementById('basics').selectedOptions;
   var bas = Array.from(bas_options).map(({ value }) => value);
   var arr_values = [].concat(a_t , a_v , mst , ts , bas); 
-  var filters = ["problem", "added_value", "total_solution", "product_characteristics", "product_properties", "price", "usability", "Revenuemechanics",  "techFeasibility", "performance", "hardware", "software", "human", "input_behavior", "output_behavior", "design", "ux", "service", "pss", "pay_in_kind", "it", "et", "mb", "marketing", "basic_no", "int_sol", "own_mark_perf", "ext_sol"];
-  var non_filters = ["budget", "time", "vis_fid", "aud_fid", "hap_fid", "fun_ran", "fun_lev", "input_behaviour", "output_behaviour"];
+  var filters = ["Problem", "Mehrwehrt", "Gesamtlösung", "Produktmerkmale", "Produkteigenschaften", "Preis", "Usability", "Erlösmechanik",  "technMachbarkeit", "Leistungserbringung", "hardware", "software", "human", "sachleistung", "pss", "Dienstleistung", "design", "ux", "it", "et", "mb", "BusinessAnalysis", "marketing", "basic_no", "int_sol", "own_mark_perf", "ext_sol"];
+  var non_filters = ["Rel_Kosten", "time", "vis_fid", "aud_fid", "hap_fid", "Funktionstiefe", "Funktionsumfang", "Eingabeverhalten", "Ausgabeverhalten"];
 
   for (i = 0; i < prot_arr.length; i++) {
     score = 0;
@@ -107,11 +101,11 @@ for (i = 0; i < sorted_array.length; i++) {
 console.log("suggested_array",sorted_array);
 console.log("Filters selected",arr_values);
 
-var textMess = "The suggested prototypes are:";
+var textMess = "Die vorgeschlagenen Prototypen sind:";
 var node= document.getElementById("container_id");
 node.querySelectorAll('*').forEach(n => n.remove());
 if (suggested_array.length == 0){
-  textMess = "No results found for the selected options!, Please select limited options and try again.";
+  textMess = "Für die von Ihnen ausgewählten Optionen wurden keine Ergebnisse gefunden! Bitte wählen Sie eingeschränkte Optionen aus und versuchen Sie es erneut.";
 }
 else{
   for (i = 0; i < suggested_array.length; i++) {
@@ -139,30 +133,54 @@ else{
       if (button.innerHTML == prot_arr[i].name){
       modal_text.innerHTML = `<h1 style="text-align:center">${prot_arr[i].name}</h1>
           <table>
-          <tr>
-          <td>Acceptance Type</td>
-          <td>Problem: ${prot_arr[i].problem}, Added Value: ${prot_arr[i].added_value}, Total Solution: ${prot_arr[i].total_solution}, Characteristic: ${prot_arr[i].product_characteristics}, Property: ${prot_arr[i].product_properties}, Usability: ${prot_arr[i].usability}</td>
+          <tr style="font-size:10px;">
+          <td>${prot_arr[i].Beschreibung}</td>
+          <td>${prot_arr[i].VorgehenzurErstellung}</td>
+          <td>${prot_arr[i].BestPractice}</td>
+          <td><img src=${prot_arr[i].Bilder} width="200" height="200"></td>
+          <td><img src=${prot_arr[i].Tools} width="200" height="200"></td>
           </tr>
+
+          <table>
           <tr>
-          <td>Added Value </td>
-          <td>Hardware: ${prot_arr[i].hardware}, Software: ${prot_arr[i].software}, Human: ${prot_arr[i].human}</td>
-          </tr>
-          <tr>
-          <td>Market Service Type</td>
-          <td>Payment in kind: ${prot_arr[i].pay_in_kind}, PSS: ${prot_arr[i].pss}, Service: ${prot_arr[i].service}</td>
-          </tr>
-          <tr>
-          <td>Skills available</td>
-          <td>Design: ${prot_arr[i].design}, UX: ${prot_arr[i].ux}, IT: ${prot_arr[i].it}, ET: ${prot_arr[i].et}, MB: ${prot_arr[i].mb}, Marketing: ${prot_arr[i].marketing}</td>
+          <td>Annahmetyp</td>
+          <td>Problem:${prot_arr[i].Problem}, Mehrwehrt:${prot_arr[i].Mehrwehrt}, Gesamtlösung:${prot_arr[i].Gesamtlösung}, Produktmerkmale:${prot_arr[i].Produktmerkmale}, Produkteigenschaften:${prot_arr[i].Produkteigenschaften}, Preis:${prot_arr[i].Preis}, Usability:${prot_arr[i].Usability},  Erlösmechanik:${prot_arr[i].Erlösmechanik}, Techn. Machbarkeit:${prot_arr[i].technMachbarkeit}, Leistungserbringung:${prot_arr[i].Leistungserbringung} </td>
           </tr>
           <tr>
-          <td>Basics for creation exists</td>
-          <td>Not needed: ${prot_arr[i].basic_no}, Internal Solution: ${prot_arr[i].int_sol}, Own Marker performance: ${prot_arr[i].own_mark_perf}, External Solution: ${prot_arr[i].ext_sol}</td>
+          <td>Wertschöpfung</td>
+          <td>Hardware:${prot_arr[i].hardware}, Software:${prot_arr[i].software}, Mensch:${prot_arr[i].human}</td>
           </tr>
-          <td>Specifications</td>
-          <td>Budget: ${prot_arr[i].budget}, Time: ${prot_arr[i].time}, Visual Fidelity: ${prot_arr[i].vis_fid}, Auditory Fidelity: ${prot_arr[i].aud_fid}, Haptic Fidelity: ${prot_arr[i].hap_fid}, Functionality Level:  ${prot_arr[i].fun_lev}, Functionality Range:  ${prot_arr[i].fun_ran}, Input Behaviour: ${prot_arr[i].input_behaviour}, Output Behaviour:  ${prot_arr[i].output_behaviour}</td>
+          <tr>
+          <td>Marktleistungstyp</td>
+          <td>Sachleistung:${prot_arr[i].sachleistung}, PSS:${prot_arr[i].pss}, Dienstleistung:${prot_arr[i].Dienstleistung}</td>
           </tr>
-          </table>`;
+          <tr>
+          <td>Kompetenzen</td>
+          <td>Design:${prot_arr[i].design}, UX:${prot_arr[i].ux}, IT:${prot_arr[i].it}, ET:${prot_arr[i].et}, MB:${prot_arr[i].mb}, BusinessAnalysis:${prot_arr[i].BusinessAnalysis}, Marketing:${prot_arr[i].marketing}</td>
+          </tr>
+          <tr>
+          <td>Grundlage</td>
+          <td>Keine:${prot_arr[i].basic_no}, Bestehende interne Lösung:${prot_arr[i].int_sol}, Bestehendes eigenes Produkt:${prot_arr[i].own_mark_perf}, Bestehende externe Lösung:${prot_arr[i].ext_sol}</td>
+          </tr>
+          <td>Spezifikationen</td>
+          <td>Relativ Kosten:${prot_arr[i].Rel_Kosten}, Set Up Time:${prot_arr[i].time}, Visuelle Wiedergabetreue:${prot_arr[i].vis_fid}, Auditive Wiedergabetreue:${prot_arr[i].aud_fid}, Haptische Wiedergabetreue:${prot_arr[i].hap_fid}, Funktionstiefe:${prot_arr[i].Funktionstiefe}, Funktionsumfang:${prot_arr[i].Funktionsumfang}, Eingabeverhalten:${prot_arr[i].Eingabeverhalten}, Ausgabeverhalten:${prot_arr[i].Ausgabeverhalten}</td>
+          </tr>
+          </table>
+          
+          <table>
+          <tr>
+          <td>Prototyp-Kombinationen</td>
+          <td>Empfehlenswert:${prot_arr[i].PrototypeKombionations_Empfehlenswert}, Kombination möglich: ${prot_arr[i].PrototypeKombionations_Möglich}</td>
+          </tr>
+          <tr>
+          <td>Methoden-Kombinationen</td>
+          <td>Empfehlenswert:${prot_arr[i].MethodKombionations_Empfehlenswert}, Kombination möglich: ${prot_arr[i].MethodKombionations_Möglich}</td>
+          </tr>
+          <tr>
+          <td>Quellen:${prot_arr[i].Quellen}</td>
+          </tr>
+          </table>
+          `;
       }
       }
     }

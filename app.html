@@ -1,18 +1,18 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Dissertation Tool</title>
+  <title>Dissertationstool</title>
   <link rel="stylesheet" type="text/css" href="app.css" />
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
   <table id="table1">
-   <tr><td style ="color:white; font-size:3vw">Dissertation Tool</td></tr>
+   <tr><td style ="color:white; font-size:3vw">Dissertationstool</td></tr>
    <tr>
     <td>
-    <button onclick="myProt()" style="font-size:2vw">Prototype</button>
-    <button onclick="myMeth()" style="font-size:2vw">Method</button>
+    <button onclick="myProt()" style="font-size:2vw">Prototypen</button>
+    <button onclick="myMeth()" style="font-size:2vw">Methoden</button>
     </td>
   </tr>
 </table>
@@ -20,59 +20,63 @@
 <div id="protDIV">
  <form id = "prototype">
     <div id="Prot_heading">
-        <h1>Answer the questions in the below form and get the matching prototypes recommeded for validating of your concept</h1>
+        <h1>Beantworten Sie die Fragen im untenstehenden Formular und erhalten Sie die passenden Prototypen, die zur Validierung Ihres Konzepts empfohlen werden</h1>
     </div>
   <table id="table2">
     <tr style="background-color:black; color:white">
     <td>Nr.</td>
-    <td>Question</td>
+    <td>Fragstellung</td>
     <td>Possible expression</td>
    </tr>
    <tr>
     <td>1</td>
-    <td>Which acceptance type is validated?</td>
+    <td>Welche Annahmetyp wird validiert?</td>
 	<td>
 		<div>
 		<select multiple id="acceptance_type">
-			<option value="problem">Problem</option>
-			<option value="added_value">Added value</option>
-			<option value="total_solution">Total solution</option>
-			<option value="product_characteristics">Characteristic</option>
-			<option value="product_properties">Property</option>
-			<option value="usability">Usability</option>
+			<option value="Problem">Problem</option>
+			<option value="Mehrwehrt">Mehrwehrt</option>
+			<option value="Gesamtlösung">Gesamtlösung</option>
+			<option value="Produktmerkmale">Produktmerkmale</option>
+			<option value="Produkteigenschaften">Produkteigenschaften</option>
+            <option value="Preis">Preis</option>
+			<option value="Usability">Usability</option>
+            <option value="Erlösmechanik">Erlösmechanik</option>
+			<option value="technMachbarkeit">Techn. Machbarkeit</option>
+            <option value="Leistungserbringung">Leistungserbringung</option>
 		</select>
 		</div>
 	</td>
    </tr>
    <tr>
     <td>2</td>
-    <td>What added value does the idea create?</td>
+    <td>Welche Wertschöpfung bedingtdie Idee?</td>
 	<td>
 		<div>
 		<select multiple id="added_value">
 			<option value="hardware">Hardware</option>
 			<option value="software">Software</option>
-			<option value="human">Person</option>
+			<option value="human">Mensch</option>
 		</select>
 		</div>
 	</td>
    </tr>
    <tr>
     <td>3</td>
-    <td>Which market service type is being addressed?</td>
+    <td>Welcher Marktleistungstyp wird adressiert?</td>
 	<td>
 		<div>
 		<select multiple id="market_service_type">
-			<option value="pay_in_kind">Payment in kind</option>
+			<option value="sachleistung">Sachleistung</option>
 			<option value="pss">PSS</option>
-			<option value="service">Service</option>
+			<option value="Dienstleistung">Dienstleistung</option>
 		</select>
 		</div>
 	</td>
    </tr>
    <tr>
     <td>4</td>
-    <td>What skills are available in the team?</td>
+    <td>Welche Kompetenzen sind im Teamvorhanden?</td>
 	<td>
 		<div>
 		<select multiple id="team_skills">
@@ -81,6 +85,7 @@
 			<option value="it">IT</option>
 			<option value="et">ET</option>
 			<option value="mb">MB</option>
+            <option value="BusinessAnalysis">BusinessAnalysis</option>
 			<option value="marketing">Marketing</option>
 		</select>
 		</div>
@@ -88,14 +93,14 @@
    </tr>
    <tr>
     <td>5</td>
-    <td>Do the basics for creating a prototype already exist?</td>
+    <td>Existieren bereits Grundlagen zur Erstellung eines Prototypen?</td>
 	<td>
 		<div>
 		<select multiple id="basics">
-			<option value="basic_no">No</option>
-			<option value="int_sol">Internal solution</option>
-			<option value="own_mark_perf">Own market performance</option>
-			<option value="ext_sol">External solution</option>
+			<option value="basic_no">Keine</option>
+			<option value="int_sol">Bestehende interne Lösung</option>
+			<option value="own_mark_perf">Bestehendes eigenes Produkt</option>
+			<option value="ext_sol">Bestehende externe Lösung</option>
 		</select>
 		</div>
 	</td>
@@ -105,7 +110,7 @@
   <table id="table3">
     <tr style="background-color:black; color:white">
     <td>Nr.</td>
-    <td>Question</td>
+    <td>Fragstellung</td>
     <td>1</td>
 	<td>2</td>
 	<td>3</td>
@@ -114,26 +119,26 @@
    </tr>
    <tr>
     <td>6</td>
-    <td>How much budget is required for building prototype?</td>
+    <td>Wie viel Budget steht für die Entwicklung des Prototypen zur Verfüng?</td>
     <td>
-    <input type="radio" name="budget" value=1>
+    <input type="radio" name="Rel_Kosten" value=1>
 	</td>
 	<td>
-    <input type="radio" name="budget" value=2>
+    <input type="radio" name="Rel_Kosten" value=2>
 	</td>
 	<td>
-    <input type="radio" name="budget" value=3>
+    <input type="radio" name="Rel_Kosten" value=3>
 	</td>
 	<td>
-    <input type="radio" name="budget" value=4> 
+    <input type="radio" name="Rel_Kosten" value=4> 
 	</td>
 	<td>
-    <input type="radio" name="budget" value=5> 
+    <input type="radio" name="Rel_Kosten" value=5> 
     </td>
    </tr>
    <tr>
     <td>7</td>
-    <td>How much time is required for building prototype?</td>
+    <td>Wie viel Zeit ist vorhanden um den Prototypen zu erstellen?</td>
     <td>
     <input type="radio" name="time" value=1> 
 	</td>
@@ -152,7 +157,7 @@
    </tr>
    <tr>
     <td>8</td>
-    <td>How good must the visual fidelity be?</td>
+    <td>Wie gut muss die visuelle Wiedergabetreue sein?</td>
     <td>
     <input type="radio" name="vis_fid" value=1> 
 	</td>
@@ -171,7 +176,7 @@
    </tr>
    <tr>
     <td>9</td>
-    <td>How good must the auditory fidelity be?</td>
+    <td>Wie gut muss die auditive Wiedergabetreue sein?</td>
     <td>
     <input type="radio" name="aud_fid" value=1> 
 	</td>
@@ -190,7 +195,7 @@
    </tr>
    <tr>
     <td>10</td>
-    <td>How good must the haptic fidelity be?</td>
+    <td>Wie gut muss die haptische Wiedergabetreue sein?</td>
     <td>
     <input type="radio" name="hap_fid" value=1> 
 	</td>
@@ -209,85 +214,85 @@
    </tr>
    <tr>
     <td>11</td>
-    <td>What level of functionality does the prototype has to show?</td>
+    <td>Welche Funktionstiefe muss der Prototyp vorweisen?</td>
     <td>
-    <input type="radio" name="fun_lev" value=1> 
+    <input type="radio" name="Funktionstiefe" value=1> 
 	</td>
 	<td>
-    <input type="radio" name="fun_lev" value=2> 
+    <input type="radio" name="Funktionstiefe" value=2> 
 	</td>
 	<td>
-    <input type="radio" name="fun_lev" value=3> 
+    <input type="radio" name="Funktionstiefe" value=3> 
 	</td>
 	<td>
-    <input type="radio" name="fun_lev" value=4> 
+    <input type="radio" name="Funktionstiefe" value=4> 
 	</td>
 	<td>
-    <input type="radio" name="fun_lev" value=5> 
+    <input type="radio" name="Funktionstiefe" value=5> 
     </td>
    </tr>
    <tr>
     <td>12</td>
-    <td>What range of functionality does the prototype has to offer?</td>
+    <td>Welche Funktionsumfang muss der Prototyp vorweisen?</td>
     <td>
-    <input type="radio" name="fun_ran" value=1> 
+    <input type="radio" name="Funktionsumfang" value=1> 
 	</td>
 	<td>
-    <input type="radio" name="fun_ran" value=2> 
+    <input type="radio" name="Funktionsumfang" value=2> 
 	</td>
 	<td>
-    <input type="radio" name="fun_ran" value=3> 
+    <input type="radio" name="Funktionsumfang" value=3> 
 	</td>
 	<td>
-    <input type="radio" name="fun_ran" value=4> 
+    <input type="radio" name="Funktionsumfang" value=4> 
 	</td>
 	<td>
-    <input type="radio" name="fun_ran" value=5> 
+    <input type="radio" name="Funktionsumfang" value=5> 
     </td>
    </tr>
    <tr>
     <td>13</td>
-    <td>How should the input behaviour of the prototype be (interactivity)?</td>
+    <td>Wie soll das Eingabeverhalten des Prototypen sein (Interaktivität)?</td>
     <td>
-    <input type="radio" name="input_behaviour" value=1>  
+    <input type="radio" name="Eingabeverhalten" value=1>  
 	</td>
 	<td>
-    <input type="radio" name="input_behaviour" value=2> 
+    <input type="radio" name="Eingabeverhalten" value=2> 
 	</td>
 	<td>
-    <input type="radio" name="input_behaviour" value=3> 
+    <input type="radio" name="Eingabeverhalten" value=3> 
 	</td>
 	<td>
-    <input type="radio" name="input_behaviour" value=4> 
+    <input type="radio" name="Eingabeverhalten" value=4> 
 	</td>
 	<td>
-    <input type="radio" name="input_behaviour" value=5> 
+    <input type="radio" name="Eingabeverhalten" value=5> 
     </td>
    </tr>
    <tr>
     <td>14</td>
-    <td>How should the output behaviour of the prototype be (interactivity)?</td>
+    <td>Wie soll das Ausgabeverhalten des Prototypen sein (Interaktivität)</td>
     <td>
-    <input type="radio" name="output_behaviour" value=1> 
+    <input type="radio" name="Ausgabeverhalten" value=1> 
 	</td>
 	<td>
-    <input type="radio" name="output_behaviour" value=2> 
+    <input type="radio" name="Ausgabeverhalten" value=2> 
 	</td>
 	<td>
-    <input type="radio" name="output_behaviour" value=3> 
+    <input type="radio" name="Ausgabeverhalten" value=3> 
 	</td>
 	<td>
-    <input type="radio" name="output_behaviour" value=4> 
+    <input type="radio" name="Ausgabeverhalten" value=4> 
 	</td>
 	<td>
-    <input type="radio" name="output_behaviour" value=5> 
+    <input type="radio" name="Ausgabeverhalten" value=5> 
     </td>
    </tr>
   </table>
  </form>
   <div id="myBtnContainer">
-    <button class="btn" onclick="filterSelection('submit')"> Submit</button>
-    <button class="btn active" onclick="clearallprotypes()"> Clear filters</button>
+    <button class="btn" onclick="filterSelection('submit')">Einreichen</button>
+    <button class="btn active" onclick="clearallprotypes()">Filter löschen</button>
   </div>
   <div class="add-info">
     <h1 class="DisplayMessage" id="Proto_message"> </h1>
