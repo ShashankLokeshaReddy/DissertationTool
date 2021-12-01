@@ -211,7 +211,7 @@ function clearallprotypes(){
   var node= document.getElementById("container_id");
   node.querySelectorAll('*').forEach(n => n.remove());
   proto_selections = ["acceptance_type", "added_value", "market_service_type", "team_skills", "basics"];
-  proto_checked = ["budget", "time", "vis_fid", "aud_fid", "hap_fid", "fun_ran", "fun_lev", "input_behaviour", "output_behaviour"];
+  proto_checked = ["Rel_Kosten", "time", "vis_fid", "aud_fid", "hap_fid", "Funktionstiefe", "Funktionsumfang", "Eingabeverhalten", "Ausgabeverhalten"];
   for (var a = 0; a < proto_selections.length; a++) 
   {
   var elements = document.getElementById(proto_selections[a]).options;
