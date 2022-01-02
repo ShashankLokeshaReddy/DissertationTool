@@ -27,7 +27,7 @@ table, tr {
   width: 100%;
 }
 
-#Prot_heading {
+#Prot_heading, #cluster-group-div {
   text-align:center;
   margin-left: auto; 
   margin-right: auto;
@@ -60,7 +60,7 @@ select option {
 .container {
     overflow: hidden;
     margin: auto;
-    width: 80%;
+    width: 85%;
     padding: 10px;
 }
     

@@ -1,14 +1,14 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-  <title>Dissertationstool</title>
+  <title>Validierungsbaukasten​</title>
   <link rel="stylesheet" type="text/css" href="app.css" />
   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
   <table id="table1">
-   <tr><td style ="color:white; font-size:3vw">Dissertationstool</td></tr>
+   <tr><td style ="color:white; font-size:3vw">Validierungsbaukasten​</td></tr>
    <tr>
     <td>
     <button onclick="myProt()" style="font-size:2vw">Prototypen</button>
@@ -289,6 +289,17 @@
     </td>
    </tr>
   </table>
+    <div id="cluster-group-div">
+        Cluster-Gruppe: 
+        <select multiple id="Cluster">
+            <option value="Virtuelle_nicht_funktionale_Gestalt">Virtuelle nicht funktionale Gestalt</option>
+            <option value="Physische_nicht_funktionale_Gestalt">Physische nicht funktionale Gestalt</option>
+            <option value="Konzeptmodelle">Konzeptmodelle</option>
+            <option value="Vertriebs-Simulation">Vertriebs Simulation</option>
+            <option value="Fiktionale,erlebbare-Marktleistungs-geschichten">Fiktionale, erlebbare Marktleistungs geschichten</option>
+            <option value="FunktionaleMarkleistungs-repräsentationen">Funktionale Markleistungs Repräsentationen</option>
+        </select>
+    </div>
  </form>
   <div id="myBtnContainer">
     <button class="btn" onclick="filterSelection('submit')">Einreichen</button>
